@@ -1,0 +1,465 @@
+/* custom css */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: "Work Sans", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.sec-bg {
+    background-color: #eff2fc;
+}
+
+/* header css start */
+
+.header-section {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+.header-section .logo {
+    padding: 10px 0;
+}
+.header-section .logo img {
+    max-width: 40px;
+    display: inline-block;
+    font-size: 24px;
+}
+.header-section .logo span {
+    transition: 0.4s;
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+.header-section .logo a{
+    text-decoration: none;
+}
+.header-section .logo a:hover {
+    text-decoration: none;
+}
+.header-section .logo a span:hover {
+    color: rgb(148, 148, 148) !important;
+}
+.header-section .menu {
+    margin-left: 20px;
+}
+.header-section .menu ul {
+    margin: 0;
+}
+.header-section .menu ul li {
+    display: inline-block;
+    line-height: 62px;
+    position: relative;
+}
+.header-section .menu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    padding: 0 15px;
+}
+.header-section .menu ul li:hover > a {
+    color: rgb(90, 90, 168);
+}
+
+.header-section .header-btn {
+    text-align: right;
+    line-height: 62px;
+}
+.header-section .header-btn button {
+    line-height: 32px;
+    background: transparent;
+    border: 1px solid #6278df;
+    padding: 0 26px;
+    border-radius: 5px;
+    color: #6278df;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.header-section .header-btn button:hover {
+    background: #6278df;
+    color: #fff;
+    box-shadow: 0px 0px 9px #6278df;
+}
+
+/* dropdown */
+
+.menu ul li {
+    position: relative;
+}
+.menu ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 11;
+}
+
+.menu ul li ul li {
+    width: 250px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+
+}
+.menu ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* header css end */
+
+/* banner css start */
+.slider {
+    background: url(img/banner-bg.jpeg) no-repeat center center;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+    z-index: 11;
+}
+.slider h4 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.slider h1 {
+    font-size: 47px;
+    margin-bottom: 40px;
+}
+
+.slider::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0205116b;
+    z-index: -1;
+}
+.slider input{
+    border: 1px solid #5BA533;
+}
+.slider button{
+    background: #508f2e;
+    border: 1px solid transparent;
+}
+/* banner css end */
+
+/* blog css start */
+.blog .blog-inner {
+    margin-top: 190px;
+}
+/* blog css end */
+
+/* testimonial css start */
+.feature-item {
+    height: 320px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(46, 51, 75, 0.3);
+}
+.feature-item img {
+    width: 300px !important;
+}
+
+.img-left-item {
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.img-left-item img {
+    height: 100%;
+    max-width: 314px;
+    position: relative;
+    left: -78px;
+}
+.text-right-item {
+    width: 60%;
+    padding: 30px;
+}
+/* testimonial css end */
+
+/* gallary css start */
+.design {
+}
+.design a {
+    position: relative;
+    display: block;
+}
+.design a::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #6279df91;
+    transition: 0.4s;
+
+    opacity: 0;
+    visibility: hidden;
+}
+.design:hover a::after {
+    opacity: 1;
+    visibility: visible;
+}
+/* gallary css End */
+
+/* pricing css start */
+
+.pricing-section h2 {
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.pricing-section p {
+    font-size: 25px;
+    color: #767676;
+    margin-bottom: 60px;
+}
+
+.pricing-section .costom-row {
+    width: 70%;
+    margin: auto;
+}
+.pricing-section .costom-row .card {
+    border: none;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(65, 73, 114, 0.3);
+}
+.pricing-section .pricing-inner {
+}
+.pricing-section .pricing-inner h4 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.pricing-section .pricing-inner p {
+    margin-bottom: 25px;
+}
+.pricing-section .pricing-inner ul {
+    padding-left: 0;
+}
+.pricing-section .pricing-inner ul li {
+    list-style: none;
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 20px;
+    margin-left: 6px;
+}
+.pricing-section .pricing-inner ul li span {
+    font-size: 23px;
+    color: #6278df;
+    padding-right: 20px;
+}
+
+
+.pricing-section .btn-div a {
+    box-shadow: ;
+    color: #6278df;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 10px 22px;
+    margin-top: 20px;
+    transition: 0.4s;
+    margin-bottom: 0px;
+}
+
+.pricing-section .costom-row .card:hover a {
+    background: rgb(53, 94, 206);
+    color: #ffff;
+}
+
+/* pricing css end */
+
+/* users css start  */
+
+
+.users-part .user-inner p {
+    color: #767676;
+    font-size: 20px;
+    width: 68%;
+    margin: auto;
+}
+.users-part .user-inner h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: -10px;
+    margin-top: 15px;
+}
+.users-part .user-inner span {
+    font-size: 65px;
+    color: #ddd9;
+}
+.users-part .user-div {
+    margin-top: 50px;
+    position: relative;
+    left: 58px;
+}
+.users-part .user-div img {
+    border-radius: 50%;
+    float: left;
+    height: 80px;
+}
+.users-part .user-div .user-text {
+    float: right;
+    position: relative;
+    top: 15px;
+    left: -102px;
+}
+.users-part .user-div .user-text h3 {
+    font-size: 23px;
+}
+.users-part .user-div .user-text p {
+    color: #555;
+    margin-top: -7px;
+}
+/* users css End */
+.team .card {
+    margin-bottom: 20px;
+    border: none;
+    margin-top: 116px;
+    transition: 0.4s;
+}
+.team .card:hover {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.212);
+}
+
+.team .card figure {
+    margin-top: -55px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+}
+.team .card figure img {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.322);
+}
+.team .card-body a {
+    display: inline-block;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(67, 88, 180, 0.322);
+    color: #000;
+    padding: 6px 18px;
+    text-decoration: none;
+    margin-bottom: 23px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: .4s;
+}
+.team .card-body a:hover{
+    background: #508f2e;
+    color: #fff;
+}
+.team .card-body h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.team .card-body h6 {
+    font-size: 19px;
+    margin-bottom: 18px !important;
+    font-weight: 400;
+}
+.team .card-body p {
+    color: #767676;
+}
+
+/* team css end */
+
+/* contact css start */
+.contact .contact-header h4 {
+    font-size: 20px;
+}
+.contact .contact-header h2 {
+    font-size: 45px;
+}
+.contact .card {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.233);
+    border: none;
+    width: 50%;
+    margin: auto;
+}
+
+textarea {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.137);
+    border: 1px solid rgb(243, 241, 241);
+}
+.contact .card textarea {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.137);
+    border: 1px solid rgb(243, 241, 241);
+}
+.contact .card-body button {
+    display: inline-block;
+    text-align: center;
+    background: #6278df;
+    color: #ffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: 500;
+}
+/* contact css End */
+
+/* Google-part css start  */
+.google-help {
+}
+.google-help .google-inner {
+    text-align: center;
+}
+.google-help .google-inner p {
+    color: #767676;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.google-help .google-inner h2 {
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+.google-help .google-inner button {
+    color: #ffff;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    transition: .4s;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(66, 199, 121, 0.198);
+
+}
+.btn-apple {
+	color: #5BA533 !important;
+	font-weight: 500;
+	background: #fff;
+	border: 1px solid #5BA533 !important;
+}
+.btn-apple:hover{
+    background: #5BA533;
+    color: #fff !important;
+}
+.btn-play {
+    background: #5BA533 !important;
+    border: 1px solid transparent !important;
+    font-weight: 500;
+}
+.btn-play:hover{
+    color: #5BA533 !important;
+    background: #fff !important;
+	border: 1px solid #5BA533 !important;
+}
+
+/* Google-part css end */
